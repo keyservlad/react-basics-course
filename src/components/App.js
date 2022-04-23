@@ -3,6 +3,7 @@ import Header from "./Header";
 import Logo from "./Logo";
 import Card from "./Card";
 import Counter from "./counter/Counter";
+import Form from "./form/form";
 
 let data = [
   {
@@ -70,7 +71,8 @@ const App = (props) => {
           padding: "20px",
         }}
       >
-        <Counter/>
+        <Form/>
+        {/* <Counter/> */}
         {/*printCard()*/}
       </main>
     </>
