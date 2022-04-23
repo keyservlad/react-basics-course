@@ -1,9 +1,7 @@
 import React from "react";
 
 const Button = (props) => {
-    if(props.points == props.goal){
-        props.setGoal(props.points * 2)
-    }
+  
   const clickedBtn = () => {
     if (props.value === "minus") {
       props.setPoints(props.points - 1);
