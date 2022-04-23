@@ -10,8 +10,17 @@ const Button = (props) => {
     }
   };
 
+const mouseEnters = (e) => {
+  console.log('Mouse when on top of button');
+  //console.log(e);
+}
+const mouseLeaves = (e) => {
+  console.log('Mouse when out of button');
+  //console.log(e);
+}
+
   return (
-    <button className="counter__minus" onClick={clickedBtn}>
+    <button className="counter__minus" onClick={clickedBtn} onMouseEnter={mouseEnters} onMouseLeave={mouseLeaves}>
       {props.children}
     </button>
   );
