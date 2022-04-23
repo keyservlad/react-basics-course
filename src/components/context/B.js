@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StateContext } from "./ClassProvider";
+import { StateContext } from "./FuncProvider";
 
 export class B extends Component {
   constructor(props) {
@@ -18,9 +18,10 @@ export class B extends Component {
           fontSize: "1.2rem",
           justifyContent: "center",
           alignItems: "center",
+          padding: "20px"
         }}
       >
-        A
+        B
         <StateContext.Consumer>
           {(context) => <h2>Name: {context.state.name}</h2>}
         </StateContext.Consumer>
