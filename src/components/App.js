@@ -2,7 +2,8 @@ import React from "react";
 import Header from "./Header";
 import Logo from "./Logo";
 import Card from "./Card";
-import Counter from "./counter/Counter";
+//import Counter from "./counter/Counter"; // Counter component normal way
+import Counter from "./counterClass/Counter"; // Counter using class (old method)
 import Form from "./form/form";
 
 let data = [
@@ -71,8 +72,8 @@ const App = (props) => {
           padding: "20px",
         }}
       >
-        <Form/>
-        {/* <Counter/> */}
+        {/*<Form/> */}
+        <Counter/>
         {/*printCard()*/}
       </main>
     </>
